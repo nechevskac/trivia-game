@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 const App = () => {
 
   return (
-    <>Trivia Game</>
+    <>Trivia Game!</>
   )
 }
 
