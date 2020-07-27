@@ -12,6 +12,7 @@ const Button = styled(_Button)({
 type MainButtonProps = {
   label: string;
   action: () => void;
+  // eslint-disable-next-line
   icon?: any;
 };
 

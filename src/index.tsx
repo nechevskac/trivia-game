@@ -18,9 +18,10 @@ const App = () => {
 
 ReactDOM.render(
   <React.StrictMode>
-  <MuiThemeProvider theme={GlobalTheme}>
-    <App />
-  </MuiThemeProvider>,
+    <MuiThemeProvider theme={GlobalTheme}>
+      <App />
+    </MuiThemeProvider>
+    ,
   </React.StrictMode>,
   document.getElementById('root'),
 );

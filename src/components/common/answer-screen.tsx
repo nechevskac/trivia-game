@@ -12,7 +12,7 @@ const AnswerScreen = (props: AnswerScreenProps) => {
   return (
     <Box display="flex" flexDirection="column" alignItems="center" height="500px" justifyContent="space-between">
       {children}
-    </Box> 
+    </Box>
   );
 };
 

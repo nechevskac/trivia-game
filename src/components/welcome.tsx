@@ -19,10 +19,7 @@ const Welcome = () => {
         <GameState questions={responseData.results} userSummary={userSummary} />
       ) : (
         <>
-          <GameStart 
-            isClicked={isClicked}
-            startGame={play}
-          />
+          <GameStart isClicked={isClicked} startGame={play} />
           {errorMsg !== '' && <SnackbarContent message={errorMsg} />}
         </>
       )}

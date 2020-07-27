@@ -22,11 +22,7 @@ type AnswerResultProps = {
 const AnswerResult = (props: AnswerResultProps) => {
   const { children } = props;
 
-  return (
-    <Result>
-      {children}
-    </Result> 
-  );
+  return <Result>{children}</Result>;
 };
 
 export default AnswerResult;

@@ -1,4 +1,4 @@
-import { Difficulty } from "./enums/difficulty";
+import { Difficulty } from './enums/difficulty';
 
 export const TEXT_LABEL = {
   [Difficulty.EASY]: 'Go easy on me',

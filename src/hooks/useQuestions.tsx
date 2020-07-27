@@ -16,14 +16,14 @@ const useQuestions = () => {
   const [errorMsg, setErrorMsg] = useState('');
 
   const handleResponse = (response: AxiosResponse) => {
-    switch(response.data.response_code) {
-      case 0: 
+    switch (response.data.response_code) {
+      case 0:
         setResponseData(response.data);
       case 1:
         setErrorMsg('No Results Could not return results.');
       case 2:
         setErrorMsg('Invalid Parameter.');
-    };
+    }
   };
 
   const play = async (difficulty: Difficulty) => {
@@ -33,7 +33,7 @@ const useQuestions = () => {
       const response = await getQuestions(difficulty);
       handleResponse(response);
     } catch (err) {
-      setErrorMsg('Sorry, something went wrong. Try again later.')
+      setErrorMsg('Sorry, something went wrong. Try again later.');
     } finally {
       setIsClicked(false);
     }

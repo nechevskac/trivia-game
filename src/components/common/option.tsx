@@ -17,6 +17,7 @@ const Button = styled(_Button)({
 type OptionProps = {
   optionValue: Difficulty | string;
   selectedOption?: Difficulty;
+  // eslint-disable-next-line
   setSelectedOption: (args: any) => void;
 };
 

@@ -16,7 +16,7 @@ const Card = styled(Box)({
 });
 
 type SummaryCardProps = {
-  summary: UserSummary
+  summary: UserSummary;
 };
 
 const SummaryCard = (props: SummaryCardProps) => {
